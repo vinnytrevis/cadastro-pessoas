@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from pathlib import Path
 from dotenv import load_dotenv
 import os
+import django_heroku
+
+django_heroku.settings(locals())
 
 load_dotenv()
 
